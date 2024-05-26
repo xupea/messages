@@ -3,11 +3,14 @@ import { StyleSheet } from "react-native";
 import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
 import Swipe from "@/components/Swipe";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Swipe />
+      <GestureHandlerRootView>
+        <Swipe />
+      </GestureHandlerRootView>
     </View>
   );
 }
